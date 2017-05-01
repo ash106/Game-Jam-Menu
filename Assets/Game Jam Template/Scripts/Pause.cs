@@ -38,6 +38,7 @@ public class Pause : MonoBehaviour {
 
 	public void DoPause()
 	{
+		Cursor.visible = true;
 		//Set isPaused to true
 		isPaused = true;
 		//Set time.timescale to 0, this will cause animations and physics to stop updating
@@ -49,6 +50,7 @@ public class Pause : MonoBehaviour {
 
 	public void UnPause()
 	{
+		Cursor.visible = false;
 		//Set isPaused to false
 		isPaused = false;
 		//Set time.timescale to 1, this will cause animations and physics to continue updating at regular speed
