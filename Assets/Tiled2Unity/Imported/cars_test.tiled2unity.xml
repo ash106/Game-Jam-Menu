@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 4/30/2017 9:41:24 PM-->
+<!--Last exported: 4/30/2017 10:41:39 PM-->
 <Tiled2Unity version="1.0.11.2">
   <AssignMaterial mesh="mesh_0001" material="roguelikeCity_magenta" />
   <AssignMaterial mesh="mesh_0002" material="roguelikeCity_magenta" />
@@ -40,6 +40,25 @@
           <Path>2752,-4160 2624,-4160 2624,-4352 2752,-4352</Path>
           <Path>704,-4160 576,-4160 576,-4352 704,-4352</Path>
         </PolygonCollider2D>
+      </GameObject>
+    </GameObject>
+    <GameObject name="Collision" x="0" y="0" z="0">
+      <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
+      <GameObject name="RectangleObject" x="0" y="-2304" rotation="0" layer="">
+        <RectangleObjectComponent tmx-object-id="1" tmx-object-name="" tmx-object-type="" tmx-object-x="0" tmx-object-y="144" tmx-object-width="400" tmx-object-height="16" tmx-object-rotation="0" />
+        <BoxCollider2D width="6400" height="256" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="-192" y="-2304" rotation="0" layer="">
+        <RectangleObjectComponent tmx-object-id="3" tmx-object-name="" tmx-object-type="" tmx-object-x="-12" tmx-object-y="144" tmx-object-width="12" tmx-object-height="160" tmx-object-rotation="0" />
+        <BoxCollider2D width="192" height="2560" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="6400" y="-2304" rotation="0" layer="">
+        <RectangleObjectComponent tmx-object-id="4" tmx-object-name="" tmx-object-type="" tmx-object-x="400" tmx-object-y="144" tmx-object-width="12" tmx-object-height="160" tmx-object-rotation="0" />
+        <BoxCollider2D width="192" height="2560" />
+      </GameObject>
+      <GameObject name="RectangleObject" x="0" y="-4608" rotation="0" layer="">
+        <RectangleObjectComponent tmx-object-id="2" tmx-object-name="" tmx-object-type="" tmx-object-x="0" tmx-object-y="288" tmx-object-width="400" tmx-object-height="16" tmx-object-rotation="0" />
+        <BoxCollider2D width="6400" height="256" />
       </GameObject>
     </GameObject>
   </Prefab>

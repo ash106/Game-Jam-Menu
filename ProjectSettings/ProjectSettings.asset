@@ -452,8 +452,10 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudServicesEnabled:
+    Collab: 1
+    UNet: 1
+  cloudProjectId: 1e3b3f34-2440-4f07-95c5-b29bcb134dae
+  projectName: Game Jam Menu
+  organizationId: alex-howington
   cloudEnabled: 0
