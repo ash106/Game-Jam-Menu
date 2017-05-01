@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 4/30/2017 11:38:18 PM-->
+<!--Last exported: 5/1/2017 12:26:22 AM-->
 <Tiled2Unity version="1.0.11.2">
   <AssignMaterial mesh="mesh_0001" material="roguelikeCity_magenta" />
   <AssignMaterial mesh="mesh_0002" material="roguelikeCity_magenta" />
@@ -9,15 +9,15 @@
   <Prefab name="cars_test" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="3" numTilesWide="25" numTilesHigh="25" tileWidth="16" tileHeight="16" exportScale="16" mapWidthInPixels="400" mapHeightInPixels="400" backgroundColor="#808080">
     <GameObject name="Background" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeCity_magenta" copy="mesh_0001" sortingLayerName="" sortingOrder="0" opacity="1" />
+      <GameObject name="roguelikeCity_magenta" copy="mesh_0001" sortingLayerName="Background" sortingOrder="0" opacity="1" />
     </GameObject>
     <GameObject name="Doors" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeCity_magenta" copy="mesh_0002" sortingLayerName="" sortingOrder="1" opacity="1" />
+      <GameObject name="roguelikeCity_magenta" copy="mesh_0002" sortingLayerName="Background" sortingOrder="1" opacity="1" />
     </GameObject>
     <GameObject name="Cars" x="0" y="0" z="0">
       <TileLayer opacity="1" offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeCity_magenta" copy="mesh_0003" sortingLayerName="" sortingOrder="2" opacity="1" />
+      <GameObject name="roguelikeCity_magenta" copy="mesh_0003" sortingLayerName="Foreground" sortingOrder="2" opacity="1" />
       <GameObject name="Collision">
         <PolygonCollider2D>
           <Path>3008,-256 2816,-128 2624,-128 2560,-192 2432,-192 2432,-512 3008,-512</Path>
