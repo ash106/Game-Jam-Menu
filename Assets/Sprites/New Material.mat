@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: roguelikeCity_magenta
-  m_Shader: {fileID: 4800000, guid: 766dc1c42357441429d869f67de2c722, type: 3}
-  m_ShaderKeywords: PIXELSNAP_ON
-  m_LightmapFlags: 5
+  m_Name: New Material
+  m_Shader: {fileID: 10800, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: e2fede2fc1b734315a6f058a448ed671, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -72,13 +72,10 @@ Material:
     m_Floats:
     - first:
         name: PixelSnap
-      second: 1
+      second: 0
     - first:
         name: _BumpScale
       second: 1
-    - first:
-        name: _CutOff
-      second: 0.1
     - first:
         name: _Cutoff
       second: 0.5
@@ -125,9 +122,6 @@ Material:
         name: _ZWrite
       second: 1
     m_Colors:
-    - first:
-        name: _AlphaColorKey
-      second: {r: 0, g: 0, b: 0, a: 0}
     - first:
         name: _Color
       second: {r: 1, g: 1, b: 1, a: 1}

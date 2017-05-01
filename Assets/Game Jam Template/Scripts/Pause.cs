@@ -50,7 +50,7 @@ public class Pause : MonoBehaviour {
 
 	public void UnPause()
 	{
-		Cursor.visible = false;
+//		Cursor.visible = false;
 		//Set isPaused to false
 		isPaused = false;
 		//Set time.timescale to 1, this will cause animations and physics to continue updating at regular speed
