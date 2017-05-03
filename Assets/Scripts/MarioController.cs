@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Prime31;
 
-public class PlayerController : MonoBehaviour {
-	
+public class MarioController : MonoBehaviour {
+
 	// movement config
 	public float runSpeed = 8f;
 	public float groundDamping = 20f; // how fast do we change direction? higher means faster
@@ -33,35 +33,35 @@ public class PlayerController : MonoBehaviour {
 	// the Update loop contains a very simple example of moving the character around and controlling the animation
 	void Update()
 	{
-//		if( Input.GetKey( KeyCode.D) )
-//		{
-//			normalizedHorizontalSpeed = 1;
-//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, -90.0f);
-//		}
-//		else if( Input.GetKey( KeyCode.A ) )
-//		{
-//			normalizedHorizontalSpeed = -1;
-//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 90.0f);
-//		}
-//		else
-//		{
-//			normalizedHorizontalSpeed = 0;
-//		}
-//
-//		if( Input.GetKey( KeyCode.W ) )
-//		{
-//			normalizedVerticalSpeed = 1;
-//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 0.0f);
-//		}
-//		else if( Input.GetKey( KeyCode.S ) )
-//		{
-//			normalizedVerticalSpeed = -1;
-//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 180.0f);
-//		}
-//		else
-//		{
-//			normalizedVerticalSpeed = 0;
-//		}
+		//		if( Input.GetKey( KeyCode.D) )
+		//		{
+		//			normalizedHorizontalSpeed = 1;
+		//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, -90.0f);
+		//		}
+		//		else if( Input.GetKey( KeyCode.A ) )
+		//		{
+		//			normalizedHorizontalSpeed = -1;
+		//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 90.0f);
+		//		}
+		//		else
+		//		{
+		//			normalizedHorizontalSpeed = 0;
+		//		}
+		//
+		//		if( Input.GetKey( KeyCode.W ) )
+		//		{
+		//			normalizedVerticalSpeed = 1;
+		//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 0.0f);
+		//		}
+		//		else if( Input.GetKey( KeyCode.S ) )
+		//		{
+		//			normalizedVerticalSpeed = -1;
+		//			transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 180.0f);
+		//		}
+		//		else
+		//		{
+		//			normalizedVerticalSpeed = 0;
+		//		}
 
 		normalizedHorizontalSpeed = Input.GetAxisRaw (horizontalAxis);
 		normalizedVerticalSpeed = Input.GetAxisRaw (verticalAxis);
@@ -72,9 +72,9 @@ public class PlayerController : MonoBehaviour {
 		_velocity.y = Mathf.Lerp( _velocity.y, normalizedVerticalSpeed * runSpeed, Time.deltaTime * groundDamping );
 
 		if (normalizedHorizontalSpeed != 0 || normalizedVerticalSpeed != 0) {
-			heading = Mathf.Atan2 (normalizedVerticalSpeed, normalizedHorizontalSpeed);
-			qTo = Quaternion.Euler (0f, 0f, (heading * Mathf.Rad2Deg) + 90);
-			transform.localRotation = Quaternion.RotateTowards (transform.localRotation, qTo, rotationSpeed * Time.deltaTime);
+//			heading = Mathf.Atan2 (normalizedVerticalSpeed, normalizedHorizontalSpeed);
+//			qTo = Quaternion.Euler (0f, 0f, (heading * Mathf.Rad2Deg) + 90);
+//			transform.localRotation = Quaternion.RotateTowards (transform.localRotation, qTo, rotationSpeed * Time.deltaTime);
 			_animator.Play (Animator.StringToHash (moveAnimation));
 		} else {
 			_animator.Play (Animator.StringToHash (idleAnimation));
